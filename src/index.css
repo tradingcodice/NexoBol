@@ -308,4 +308,40 @@ h2 {
   h1 {
     font-size: 2.25rem;
   }
+
+  /* Mobile Layout Adjustments */
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .show-on-mobile {
+    display: flex !important;
+  }
+
+  /* Private Layout Mobile Override */
+  .app-private main {
+    margin-left: 0 !important;
+    /* Remove sidebar space */
+    padding-bottom: 80px !important;
+    /* Space for bottom nav */
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+
+/* Safe Area for Mobile Web Apps */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+
+  .app-public,
+  .app-private {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
 }

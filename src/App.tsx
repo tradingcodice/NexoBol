@@ -6,6 +6,7 @@ import { Auth } from './components/Auth';
 import { Dashboard } from './components/Dashboard';
 import { P2PMarket } from './components/P2PMarket';
 import { Sidebar } from './components/Sidebar';
+import { MobileNav } from './components/MobileNav';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('landing');
@@ -45,20 +46,33 @@ function App() {
   if (isLoggedIn) {
     return (
       <div className="app-private" style={{ display: 'flex', minHeight: '100vh', background: 'var(--color-bg)' }}>
-        <Sidebar
-          currentPage={currentPage}
-          onNavigate={navigate}
-          onLogout={handleLogout}
-          userEmail={userEmail}
-        />
-        <main style={{ marginLeft: '260px', flex: 1, padding: '2rem' }}>
+        <div className="hide-on-mobile">
+          <Sidebar
+            currentPage={currentPage}
+            onNavigate={navigate}
+            onLogout={handleLogout}
+            userEmail={userEmail}
+          />
+        </div>
+        <main style={{ marginLeft: '260px', flex: 1, padding: '2rem' }} className="mobile-main-reset">
+          {/* Header specifically for mobile to show logo/logout if needed, or keep clean */}
+          <div className="hide-on-desktop flex justify-between items-center mb-4">
+            <img src="/src/assets/logo.png" alt="NexoBol" style={{ height: '32px', background: 'white', padding: '4px', borderRadius: '4px' }} />
+            <button onClick={handleLogout} className="btn-text" style={{ fontSize: '0.8rem' }}>Salir</button>
+          </div>
+
           {currentPage === 'dashboard' && <Dashboard onNavigate={navigate} />}
           {currentPage === 'p2p' && <P2PMarket />}
           {currentPage === 'wallet' && <PlaceholderPage title="Billetera" />}
           {currentPage === 'settings' && <PlaceholderPage title="Configuración" />}
+
           {/* If user tries to go to 'landing' while logged in, show dashboard or redirects? For now, dashboard */}
           {(currentPage === 'landing' || currentPage === 'login' || currentPage === 'register') && <Dashboard onNavigate={navigate} />}
         </main>
+
+        <div className="hide-on-desktop">
+          <MobileNav currentPage={currentPage} onNavigate={navigate} />
+        </div>
       </div>
     );
   }
