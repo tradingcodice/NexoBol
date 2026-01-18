@@ -1,5 +1,5 @@
 import React from 'react';
-import { LayoutDashboard, Users, Wallet, Settings, LogOut, ArrowRightLeft } from 'lucide-react';
+import { LayoutDashboard, Users, Wallet, Settings, LogOut } from 'lucide-react';
 
 interface SidebarProps {
     currentPage: string;

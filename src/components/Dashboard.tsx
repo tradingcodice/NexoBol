@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, ArrowUpRight, ArrowDownLeft, Clock, MoreHorizontal, Copy } from 'lucide-react';
+import { TrendingUp, ArrowUpRight, ArrowDownLeft, Clock } from 'lucide-react';
 
 interface DashboardProps {
     onNavigate: (page: string) => void;

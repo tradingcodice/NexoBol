@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShieldCheck, Globe, Zap, ArrowRight, TrendingUp, UserCheck, Smartphone } from 'lucide-react';
-import heroMockup from '../assets/hero-mockup.png'; // Attempt to import, if fails, we handle via img onerror
+
 
 interface LandingPageProps {
     onNavigate: (page: string) => void;

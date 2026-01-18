@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Lock, User, ArrowRight, ArrowLeft } from 'lucide-react';
+import { Mail, Lock, User, ArrowRight } from 'lucide-react';
 
 interface AuthProps {
     mode: 'login' | 'register';

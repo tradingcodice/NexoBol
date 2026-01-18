@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, LogOut, ArrowRightLeft } from 'lucide-react';
+import { User, LogOut } from 'lucide-react';
 
 interface NavbarProps {
     isLoggedIn: boolean;
