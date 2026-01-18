@@ -46,7 +46,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
                         <div style={{ background: 'var(--color-bg)', padding: '4px', borderRadius: '4px' }}><Clock size={14} color="var(--color-text-secondary)" /></div>
                     </div>
                     <div style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '0.5rem' }}>
-                        250.00 <span style={{ fontSize: '1rem', color: 'var(--color-text-secondary)' }}>BOB</span>
+                        4,775.00 <span style={{ fontSize: '1rem', color: 'var(--color-text-secondary)' }}>BOB</span>
                     </div>
                     <div className="flex gap-2 mt-4">
                         <button className="btn btn-secondary" style={{ padding: '0.5rem 1rem', fontSize: '0.85rem', flex: 1 }}>Depositar</button>
