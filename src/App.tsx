@@ -57,7 +57,10 @@ function App() {
         <main style={{ marginLeft: '260px', flex: 1, padding: '2rem' }} className="mobile-main-reset">
           {/* Header specifically for mobile to show logo/logout if needed, or keep clean */}
           <div className="hide-on-desktop flex justify-between items-center mb-4">
-            <img src="/src/assets/logo.png" alt="NexoBol" style={{ height: '32px', background: 'white', padding: '4px', borderRadius: '4px' }} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '2px', fontWeight: '900', fontSize: '1.5rem', letterSpacing: '-0.5px' }}>
+              <span style={{ color: 'white' }}>Nexo</span>
+              <span style={{ background: 'linear-gradient(to right, #DA291C 33%, #F4E400 33%, #F4E400 66%, #007A33 66%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', display: 'inline-block' }}>Bol</span>
+            </div>
             <button onClick={handleLogout} className="btn-text" style={{ fontSize: '0.8rem' }}>Salir</button>
           </div>
 

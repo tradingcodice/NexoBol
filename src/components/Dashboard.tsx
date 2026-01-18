@@ -29,9 +29,9 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
                         <span className="badge-success" style={{ fontSize: '0.75rem', padding: '2px 6px', borderRadius: '4px', color: 'var(--color-success)', background: 'rgba(14, 203, 129, 0.1)' }}>+2.5%</span>
                     </div>
                     <div style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '0.5rem' }}>
-                        $ 1,250.00 <span style={{ fontSize: '1rem', color: 'var(--color-text-secondary)' }}>USD</span>
+                        $ 500.00 <span style={{ fontSize: '1rem', color: 'var(--color-text-secondary)' }}>USD</span>
                     </div>
-                    <div className="text-muted text-sm">≈ 8,562.50 BOB</div>
+                    <div className="text-muted text-sm">≈ 4,775.00 BOB</div>
 
                     {/* Decorative Sparkline */}
                     <svg style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', height: '50px', opacity: 0.2 }} preserveAspectRatio="none">

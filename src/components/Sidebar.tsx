@@ -27,9 +27,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, onNavigate, onLog
             position: 'fixed'
         }}>
             {/* Brand */}
-            <div style={{ padding: '2rem 1.5rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <div style={{ background: 'white', borderRadius: '8px', padding: '6px 10px', display: 'flex', alignItems: 'center', width: '100%' }}>
-                    <img src="/src/assets/logo.png" alt="NexoBol" style={{ height: '36px', maxWidth: '100%', objectFit: 'contain' }} />
+            <div style={{ padding: '2rem 1.5rem', display: 'flex', alignItems: 'center' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '2px', fontWeight: '900', fontSize: '1.8rem', letterSpacing: '-1px' }}>
+                    <span style={{ color: 'white' }}>Nexo</span>
+                    <span style={{ background: 'linear-gradient(to right, #DA291C 33%, #F4E400 33%, #F4E400 66%, #007A33 66%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', display: 'inline-block' }}>Bol</span>
                 </div>
             </div>
 

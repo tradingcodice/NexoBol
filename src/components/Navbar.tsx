@@ -17,9 +17,10 @@ export const Navbar: React.FC<NavbarProps> = ({ isLoggedIn, onLogout, currentPag
                     className="flex items-center gap-2 cursor-pointer h-full"
                     onClick={() => onNavigate(isLoggedIn ? 'dashboard' : 'landing')}
                 >
-                    {/* Logo Integration */}
-                    <div style={{ background: 'white', borderRadius: '8px', padding: '4px 8px', display: 'flex', alignItems: 'center' }}>
-                        <img src="/src/assets/logo.png" alt="NexoBol Logo" style={{ height: '32px', width: 'auto' }} />
+                    {/* Logo Text with Bolivia Colors */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '2px', fontWeight: '900', fontSize: '1.8rem', letterSpacing: '-1px' }}>
+                        <span style={{ color: 'white' }}>Nexo</span>
+                        <span style={{ background: 'linear-gradient(to right, #DA291C 33%, #F4E400 33%, #F4E400 66%, #007A33 66%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', display: 'inline-block' }}>Bol</span>
                     </div>
                 </div>
 
