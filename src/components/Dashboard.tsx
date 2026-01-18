@@ -57,7 +57,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
                 {/* PNL Card */}
                 <div className="card">
                     <div className="flex justify-between items-start mb-2">
-                        <span className="text-muted text-sm">Ganancia de Hoy (PNL)</span>
+                        <span className="text-muted text-sm">Ganancia Diaria</span>
                     </div>
                     <div style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--color-success)' }}>
                         +$ 12.50
